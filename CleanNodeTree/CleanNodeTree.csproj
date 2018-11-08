@@ -42,10 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CleanNodeFormatter.cs" />
     <Compile Include="MultipleRootsException.cs" />
     <Compile Include="NodeInit.cs" />
     <Compile Include="NodeCollection.cs" />
-    <Compile Include="InvalidIndent.cs" />
+    <Compile Include="InvalidIndentException.cs" />
     <Compile Include="NodeParseData.cs" />
     <Compile Include="NodeProp.cs" />
     <Compile Include="NodeSerialization.cs" />

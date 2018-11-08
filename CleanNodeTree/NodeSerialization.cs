@@ -18,6 +18,15 @@ namespace CleanNodeTree
             return FromString(File.ReadAllText(path));
         }
 
+        public static HierarchyNode FromStream(Stream stream)
+        {
+            StreamReader reader = new StreamReader(stream);
+            HierarchyNode _ = FromString(reader.ReadToEnd());
+            reader.Close();
+
+            return _;
+        }
+
         /// <summary>
         /// Creates a node from raw ClearNodeTree data
         /// </summary>
