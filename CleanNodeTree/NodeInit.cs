@@ -115,6 +115,11 @@ namespace CleanNodeTree
 
         static string ObjectToString(object obj)
         {
+            if (obj == null)
+            {
+                return "";
+            }
+
             if (obj is string)
             {
                 return (string)obj;
